@@ -1,4 +1,3 @@
-
 namespace TrustEze
 {
     public class Program

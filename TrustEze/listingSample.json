@@ -1,0 +1,286 @@
+{
+  "Success": true,
+  "Results": [
+    {
+      "ResourceUri": "/vX/listings/20060412165917817933000000",
+      "Id": "20060412165917817933000000",
+      "StandardFields": {
+        "ListingKey": "20060412165917817933000000",
+        "ListingId": "10-1796",
+        "PropertyType": "A",
+        "PropertySubType": "SF",
+        "ListPrice": 1079900,
+        "StreetNumber": "611",
+        "StreetDirPrefix": null,
+        "StreetName": "8th",
+        "StreetSuffix": "St",
+        "StreetDirSuffix": "S",
+        "StreetAdditionalInfo": null,
+        "City": "Fargo",
+        "StateOrProvince": "ND",
+        "PostalCode": "58103",
+        "YearBuilt": 1884,
+        "BuildingAreaTotal": 7275,
+        "BathsThreeQuarter": 1,
+        "BathsTotal": 8,
+        "BathsFull": 5,
+        "BedsTotal": 8,
+        "BathsHalf": 2,
+        "Longitude": -96.792246,
+        "Latitude": 46.868464,
+        "SubdivisionName": "Westgate",
+        "MLSAreaMinor": "West",
+        "CountyOrParish": null,
+        "PublicRemarks": "Great foyer. Cool kitchen. 6 fireplaces. The list goes on.",
+        "PrivateRemarks": "********",
+        "PrivateOfficeRemarks": "********",
+        "PendingDate": "********",
+        "CloseDate": "********",
+        "CancelDate": "********",
+        "WithdrawDate": "********",
+        "ListAgentFirstName": "Joe",
+        "ListAgentMiddleName": "",
+        "ListAgentLastName": "Agent",
+        "ListAgentPreferredPhone": "123-456-7890",
+        "ListAgentPreferredPhoneExt": "3",
+        "ListAgentOfficePhone": "123-456-7890",
+        "ListAgentOfficePhoneExt": "123-456-7890",
+        "ListAgentCellPhone": "123-456-7890",
+        "ListAgentDirectPhone": "123-456-7890",
+        "ListAgentTollFreePhone": "123-456-7890",
+        "ListAgentFax": "123-456-7890",
+        "ListAgentPager": "123-456-7890",
+        "ListAgentVoiceMail": "123-456-7890",
+        "ListAgentVoiceMailExt": "123-456-7890",
+        "ListAgentEmail": "joe@joeagent.com",
+        "ListAgentURL": "http://joeagent.com/",
+        "ListAgentStateLicense": "12345",
+        "ListAgentDesignation": "CRS, GRI",
+        "ListOfficeName": "BigBrokerCo",
+        "ListOfficePhone": "987-654-3210",
+        "ListOfficePhoneExt": "33",
+        "ListOfficeFax": "987-654-3210",
+        "ListOfficeEmail": "big@brokerco.com",
+        "ListOfficeURL": "http://bigbrokerco.com",
+        "CoListAgentFirstName": "Jimmy",
+        "CoListAgentMiddleName": "",
+        "CoListAgentLastName": "Agent",
+        "CoListAgentPreferredPhone": "323-456-7890",
+        "CoListAgentPreferredPhoneExt": "3",
+        "CoListAgentOfficePhone": "123-456-7890",
+        "CoListAgentOfficePhoneExt": "123-456-7890",
+        "CoListAgentCellPhone": "123-456-7890",
+        "CoListAgentDirectPhone": "123-456-7890",
+        "CoListAgentTollFreePhone": "123-456-7890",
+        "CoListAgentFax": "123-456-7890",
+        "CoListAgentPager": "123-456-7890",
+        "CoListAgentVoiceMail": "123-456-7890",
+        "CoListAgentVoiceMailExt": "123-456-7890",
+        "CoListAgentEmail": "jimmy@jimmyagent.com",
+        "CoListAgentURL": "http://jimmyagent.com/",
+        "CoListAgentStateLicense": "22345",
+        "CoListAgentDesignation": "CRS, GRI",
+        "CoListOfficeName": "BigBrokerCo",
+        "CoListOfficePhone": "987-654-3210",
+        "CoListOfficePhoneExt": "33",
+        "CoListOfficeFax": "987-654-3210",
+        "CoListOfficeEmail": "big@brokerco.com",
+        "CoListOfficeURL": "http://bigbrokerco.com",
+        "ModificationTimestamp": "2010-11-22T20:09:37Z",
+        "VirtualTourURLBranded": "http://somethirdpartyservice.com/234",
+        "VirtualTourURLUnbranded": "http://somethirdpartyservice.com/345",
+        "Supplement": "Text supplement goes here",
+        "Photos": [
+          {
+            "ResourceUri": "/vX/listings/20060412165917817933000000/photos/20080917142739989238000000",
+            "Id": "20080917142739989238000000",
+            "Name": "Listing Photo",
+            "Caption": "",
+            "UriThumb": "http://photos.sparkplatform.com/demomls/20080917142739989238000000-t.jpg",
+            "Uri300": "http://photos.sparkplatform.com/demomls/20080917142739989238000000.jpg",
+            "Uri640": "http://resize.sparkplatform.com/demomls/640x480/true/20080917142739989238000000-o.jpg",
+            "Uri800": "http://resize.sparkplatform.com/demomls/800x600/true/20080917142739989238000000-o.jpg",
+            "Uri1024": "http://resize.sparkplatform.com/demomls/1024x768/true/20080917142739989238000000-o.jpg",
+            "Uri1280": "http://resize.sparkplatform.com/demomls/1280x1024/true/20080917142739989238000000-o.jpg",
+            "Uri1600": "http://resize.sparkplatform.com/demomls/1600x1200/true/20080917142739989238000000-o.jpg",
+            "Uri2048": "http://resize.sparkplatform.com/demomls/2048x1600/true/20080917142739989238000000-o.jpg",
+            "UriLarge": "http://photos.sparkplatform.com/demomls/20080917142739989238000000-o.jpg",
+            "Primary": true
+          }
+        ],
+        "OpenHouses": [
+          {
+            "ResourceUri": "/vX/listings/20060412165917817933000000/openhouses/10000000000000000000000000",
+            "Id": "10000000000000000000000000",
+            "Date": "2007-07-08",
+            "StartTime": "9:00 am",
+            "EndTime": "1:00 pm"
+          }
+        ],
+        "Documents": [
+          {
+            "ResourceUri": "/listings/20100815153524571646000000/documents/20101125153422574618000000",
+            "Id": "20101125153422574618000000",
+            "Name": "Document name",
+            "Uri": "http://documents.sparkplatform.com/abc.pdf"
+          }
+        ],
+        "VirtualTours": [
+          {
+            "ResourceUri": "/listings/20100815153524571646000000/virtualtours/20101213041526458274000000",
+            "Id": "20101213041526458274000000",
+            "Name": "VT name",
+            "Uri": "http://somethirdpartyvtservice.com/123",
+            "Type": "branded"
+          }
+        ],
+        "Videos": [
+          {
+            "ResourceUri": "/listings/20100815153524571646000000/videos/20101213041526458274000000",
+            "Id": "20101213041526458274000000",
+            "Name": "Video name",
+            "Caption": "Caption text",
+            "Type": "branded",
+            "ObjectHtml": "<>"
+          }
+        ],
+        "Rooms": [
+          {
+            "Id": "20110525151622697369000000",
+            "ResourceUri": "/v1/listings/20101014195350951959000000/rooms/20110525151622697369000000",
+            "Fields": [
+              {
+                "Room Name": "Bedroom"
+              },
+              {
+                "Room Level": "1"
+              },
+              {
+                "No. of Rooms": "2"
+              },
+              {
+                "Area": "40"
+              },
+              {
+                "Length": null
+              },
+              {
+                "Width": null
+              },
+              {
+                "Room Remarks": "Lorem ipsum dolor sit amet"
+              }
+            ]
+          }
+        ]
+      },
+      "CustomFields": [
+        {
+          "Main": [
+            {
+              "Contract Information": [
+                {
+                  "Book Section": "Residential w/ Acreage"
+                },
+                {
+                  "Area": "North (Bonner & Boundary)"
+                },
+                {
+                  "Begin Date": "2006-03-03"
+                }
+              ]
+            },
+            {
+              "General Property Description": [
+                {
+                  "Realtor.COM Type": "Residential - Single Family"
+                },
+                {
+                  "Style": "Multi Level"
+                },
+                {
+                  "Basement": "No"
+                },
+                {
+                  "Stories": 2
+                },
+                {
+                  "Garage Type": "Att Garage"
+                },
+                {
+                  "Garage Stall": "3 or more"
+                },
+                {
+                  "SqFt B": 0
+                },
+                {
+                  "SqFt 1": 3585
+                },
+                {
+                  "SqFt 2": 1500
+                },
+                {
+                  "SqFt Source": "Assessor/Tax Roll"
+                },
+                {
+                  "New Construction": "No"
+                },
+                {
+                  "Lot Acres": 36.9
+                },
+                {
+                  "Lot Type 1": "Residential"
+                },
+                {
+                  "Lot Type 2": "Lake/River View"
+                },
+                {
+                  "Lake/River Name": "Granite Lake"
+                }
+              ]
+            }
+          ],
+          "Details": [
+            {
+              "View": [
+                {
+                  "Mountain": true
+                },
+                {
+                  "River": true
+                }
+              ]
+            },
+            {
+              "Lot Features": [
+                {
+                  "Irregular": true
+                },
+                {
+                  "Level": true
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "DisplayCompliance": {
+        "IDXLogoSmall": {
+          "LogoUri": "http://somesite.com/logo/small.jpg",
+          "Type": "Uri"
+        },
+        "View": "Detail",
+        "IDXLogo": {
+          "LogoUri": "Acme Realty",
+          "Type": "Text"
+        }
+      }
+    }
+  ],
+  "Pagination": {
+    "TotalRows": 78,
+    "PageSize": 25,
+    "TotalPages": 4,
+    "CurrentPage": 1
+  }
+}
