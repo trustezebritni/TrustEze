@@ -21,6 +21,10 @@ namespace TrustEze.Controllers
             _logger = logger;
         }
 
+        /// <summary>
+        /// Get Users comment goes here
+        /// </summary>
+        /// <returns></returns>
         [HttpGet(Name = "GetUsers")]
         public IEnumerable<UserDto> Get()
         {

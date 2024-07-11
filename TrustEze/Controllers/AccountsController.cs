@@ -20,7 +20,10 @@ namespace TrustEze.Controllers
         {
             _logger = logger;
         }
-
+        /// <summary>
+        /// Get Accounts comment goes here
+        /// </summary>
+        /// <returns></returns>
         [HttpGet(Name = "GetAccounts")]
         public IEnumerable<AccountDto> Get()
         {

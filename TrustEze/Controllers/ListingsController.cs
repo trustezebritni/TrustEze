@@ -6,6 +6,9 @@ using TrustEze.Models.Api;
 
 namespace TrustEze.Controllers
 {
+    /// <summary>
+    /// Testing Summary Goes Here
+    /// </summary>
     [ApiController]
     [Route("[controller]")]
     public class ListingsController : ControllerBase
@@ -33,11 +36,34 @@ namespace TrustEze.Controllers
         {
             _logger = logger;
         }
-
+        /// <summary>
+        /// Get Listings comment goes here
+        /// </summary>
+        /// <returns>returns a thing</returns>
         [HttpGet(Name = "GetListings")]
-        public Root Get()
+        public Root Get([FromQuery] SampleParam param, [FromBody] SampleBody body)
         {
             return _listingResponse;
         }
     }
+}
+/// <summary>
+/// SampleParam comment goes here
+/// </summary>
+public class SampleParam
+{
+    /// <summary>
+    /// id comment goes here
+    /// </summary>
+    public int Id { get; set; }
+}
+/// <summary>
+/// SampleBody comment goes here
+/// </summary>
+public class SampleBody
+{
+    /// <summary>
+    /// name comment goes here
+    /// </summary>
+    public string Name { get; set; }
 }
