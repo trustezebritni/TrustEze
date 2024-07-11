@@ -41,29 +41,9 @@ namespace TrustEze.Controllers
         /// </summary>
         /// <returns>returns a thing</returns>
         [HttpGet(Name = "GetListings")]
-        public Root Get([FromQuery] SampleParam param, [FromBody] SampleBody body)
+        public Root Get()
         {
             return _listingResponse;
         }
     }
-}
-/// <summary>
-/// SampleParam comment goes here
-/// </summary>
-public class SampleParam
-{
-    /// <summary>
-    /// id comment goes here
-    /// </summary>
-    public int Id { get; set; }
-}
-/// <summary>
-/// SampleBody comment goes here
-/// </summary>
-public class SampleBody
-{
-    /// <summary>
-    /// name comment goes here
-    /// </summary>
-    public string Name { get; set; }
 }
