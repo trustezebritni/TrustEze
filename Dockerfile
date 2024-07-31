@@ -15,4 +15,5 @@ COPY --from=build-env /app/out ./
 EXPOSE 8080
 EXPOSE 80
 EXPOSE 443
+RUN dotnet dev-certs https
 ENTRYPOINT ["dotnet", "./TrustEze.dll"]
