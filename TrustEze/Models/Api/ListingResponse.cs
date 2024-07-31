@@ -45,8 +45,8 @@
 
         public string NoofRooms { get; set; }
         public string Area { get; set; }
-        public object Length { get; set; }
-        public object Width { get; set; }
+        public int Length { get; set; }
+        public int Width { get; set; }
 
         public string RoomRemarks { get; set; }
     }
@@ -155,7 +155,7 @@
         public List<Field> Fields { get; set; }
     }
 
-    public class Root
+    public class ListingResponse
     {
         public bool Success { get; set; }
         public List<Result> Results { get; set; }
@@ -245,6 +245,7 @@
         public string CoListOfficeFax { get; set; }
         public string CoListOfficeEmail { get; set; }
         public string CoListOfficeURL { get; set; }
+        //TODO left off here
         public DateTime ModificationTimestamp { get; set; }
         public string VirtualTourURLBranded { get; set; }
         public string VirtualTourURLUnbranded { get; set; }

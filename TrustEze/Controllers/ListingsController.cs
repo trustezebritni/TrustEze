@@ -13,21 +13,24 @@ namespace TrustEze.Controllers
     [Route("[controller]")]
     public class ListingsController : ControllerBase
     {
-        private static readonly Root? _listingResponse;
+        private static readonly ListingResponse? _listingResponse;
         static ListingsController()
         {
-            var assembly = Assembly.GetExecutingAssembly();
-            var resourceName = "TrustEze.listingSample.json";
-            using (Stream? stream = assembly.GetManifestResourceStream(resourceName))
-            using (StreamReader reader = new StreamReader(stream ?? throw new Exception("TrustEze.listingSample.json not found")))
-            {
-                string result = reader.ReadToEnd();
-                _listingResponse = JsonSerializer.Deserialize<Root>(result);
-                if (_listingResponse == null)
-                {
-                    throw new Exception("Error Deserializing 'TrustEze.listingSample.json'");
-                }
-            }
+            _listingResponse = new ListingResponse();
+            Fakers.GetListingFaker().Populate(_listingResponse);
+
+            //var assembly = Assembly.GetExecutingAssembly();
+            //var resourceName = "TrustEze.listingSample.json";
+            //using (Stream? stream = assembly.GetManifestResourceStream(resourceName))
+            //using (StreamReader reader = new StreamReader(stream ?? throw new Exception("TrustEze.listingSample.json not found")))
+            //{
+            //    string result = reader.ReadToEnd();
+            //    _listingResponse = JsonSerializer.Deserialize<ListingResponse>(result);
+            //    if (_listingResponse == null)
+            //    {
+            //        throw new Exception("Error Deserializing 'TrustEze.listingSample.json'");
+            //    }
+            //}
         }
 
         private readonly ILogger<AccountsController> _logger;
@@ -41,7 +44,7 @@ namespace TrustEze.Controllers
         /// </summary>
         /// <returns>returns a thing</returns>
         [HttpGet(Name = "GetListings")]
-        public Root Get()
+        public ListingResponse Get()
         {
             return _listingResponse;
         }
