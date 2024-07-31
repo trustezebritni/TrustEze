@@ -11,7 +11,7 @@ namespace TrustEze
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-            builder.WebHost.UseUrls("http://localhost:8080;https://localhost:443");
+            //builder.WebHost.UseUrls("http://localhost:8080;https://localhost:443");
 
             // Add services to the container.
 
