@@ -3,7 +3,7 @@ WORKDIR /app
 COPY . .
 RUN dotnet restore ./TrustEze/TrustEze.csproj
 RUN dotnet publish -c Release -o out
-
+RUN dotnet dev-certs https
 
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
 
@@ -15,5 +15,5 @@ COPY --from=build-env /app/out ./
 EXPOSE 8080
 EXPOSE 80
 EXPOSE 443
-RUN dotnet dev-certs https
+
 ENTRYPOINT ["dotnet", "./TrustEze.dll"]
