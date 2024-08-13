@@ -7,6 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrustEze", "TrustEze\TrustE
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "configs", "configs", "{6EE70CAE-2E5C-4F12-9E1C-18F51BBB7A4C}"
 	ProjectSection(SolutionItems) = preProject
+		docker-entrypoint.sh = docker-entrypoint.sh
 		Dockerfile = Dockerfile
 	EndProjectSection
 EndProject
