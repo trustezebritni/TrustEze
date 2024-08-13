@@ -2,37 +2,6 @@ import './App.css';
 import React, { useState, useEffect } from 'react';
 
 
-// function App() {
-
-//   const [data, setData] = useState(null);
-
-//   function handleClick() {
-//     const xhr = new XMLHttpRequest();
-//     xhr.open('GET', 'http://api.trusteze.co/listings');
-//     xhr.onload = function() {
-//       if (xhr.status === 200) {
-//         setData(JSON.parse(xhr.responseText));
-//         console.log('SUCCESS');
-//       }
-//       else
-//       {
-//         console.log('FAILURE');
-//       }
-//     };
-//     xhr.send();
-//   }
-
-
-//   return (
-//     <div>
-//     <button onClick={handleClick}>Get Data</button>
-//     {data ? <div>{JSON.stringify(data)}</div> : <div>Loading...</div>}
-//   </div>
-//   );
-// }
-
-// export default App;
-
 
 function App() {
   const [data, setData] = useState(null);
@@ -46,8 +15,25 @@ function App() {
 
   return (
     <div>
-      {data ? <pre>{JSON.stringify(data, null, 2)}</pre> : 'Loading...'}
+      {data ? <pre>{createTable(data)}</pre> : 'Loading...'}
     </div>
+  );
+}
+function createTable(data) {
+
+  return (
+    <table>
+      <tr key={"header"}>
+        <th>Id</th>
+        <th>Street Name</th>
+      </tr>
+      {data.results.map((item) => (
+        <tr key="123">
+         <td> {item.id}</td>
+         <td> {item.standardFields.streetName}</td>
+        </tr>
+      ))}
+    </table>
   );
 }
 
