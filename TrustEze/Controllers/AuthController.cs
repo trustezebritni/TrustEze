@@ -22,21 +22,7 @@ namespace TrustEze.Controllers
         [HttpGet("")]
         public async Task<IActionResult> Auth([FromQuery] string code)
         {
-
-            //            curl--location--request POST 'https://trusteze.auth.us-east-1.amazoncognito.com/oauth2/token' \
-            //--header 'Content-Type: application/x-www-form-urlencoded' \
-            //--data - urlencode 'code=86b710fd-c79a-4b64-a05d-2b557c963e35' \
-            //--data - urlencode 'grant_type=authorization_code' \
-            //--data - urlencode 'client_id=3gn8kb63bta2jmkjhcnhtnb4q0' \
-            //--data - urlencode 'client_secret=1ben1edl158vsaa276fhflpko952ca42af7s94b9nd40diooi1g9' \
-            //--data - urlencode 'redirect_uri=http://localhost:80/auth'
-
-            //var cs = "1ben1edl158vsaa276fhflpko952ca42af7s94b9nd40diooi1g9";
-            //var clientId = "3gn8kb63bta2jmkjhcnhtnb4q0";
-            //var redirectUri = "http://localhost:80/auth";
-            //var cognitoUri = "https://trusteze.auth.us-east-1.amazoncognito.com/oauth2/token";
-
-            var k = new List<KeyValuePair<string, string>>()
+            var headers = new List<KeyValuePair<string, string>>()
             {
                 new KeyValuePair<string, string>("grant_type", "authorization_code"),
                 new KeyValuePair<string, string>("client_id", _options.ClientId),
@@ -44,7 +30,7 @@ namespace TrustEze.Controllers
                 new KeyValuePair<string, string>("code", code),
                 new KeyValuePair<string, string>("redirect_uri", _options.CallbackUri),
             };
-            var content = new FormUrlEncodedContent(k);
+            var content = new FormUrlEncodedContent(headers);
 
             var httpRequestMessage = new HttpRequestMessage(HttpMethod.Post, _options.CognitoUri)
             {
@@ -69,8 +55,18 @@ namespace TrustEze.Controllers
 
         [HttpGet("login")]
         public IActionResult Login()
-        {//https://trusteze.auth.us-east-1.amazoncognito.com/login?client_id=3gn8kb63bta2jmkjhcnhtnb4q0&response_type=code&scope=email+openid+phone&redirect_uri=http%3A%2F%2Flocalhost%3A80%2Fauth
+        {
             return Redirect(_options.HostedUIUri);
         }
     }
 }
+
+
+
+//curl--location--request POST 'https://trusteze.auth.us-east-1.amazoncognito.com/oauth2/token' \
+//--header 'Content-Type: application/x-www-form-urlencoded' \
+//--data - urlencode 'code=CODE' \
+//--data - urlencode 'grant_type=authorization_code' \
+//--data - urlencode 'client_id=3gn8kb63bta2jmkjhcnhtnb4q0' \
+//--data - urlencode 'client_secret=CLIENT_SECRET' \
+//--data - urlencode 'redirect_uri=http://localhost:80/auth'
