@@ -6,5 +6,6 @@
         public string ClientSecret { get; set; }
         public string CallbackUri { get; set; }
         public string CognitoUri { get; set; }
+        public string HostedUIUri { get; set; }
     }
 }

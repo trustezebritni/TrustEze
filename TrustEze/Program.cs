@@ -51,6 +51,7 @@ namespace TrustEze
                 p.ClientSecret = builder.Configuration["CLIENT_SECRET"] ?? throw new ArgumentNullException("CLIENT_SECRET");
                 p.ClientId = builder.Configuration["CLIENT_ID"] ?? throw new ArgumentNullException("CLIENT_ID");
                 p.CallbackUri = builder.Configuration["CALLBACK_URI"] ?? throw new ArgumentNullException("CALLBACK_URI");
+                p.HostedUIUri = builder.Configuration["HOSTED_UI_URI"] ?? throw new ArgumentNullException("HOSTED_UI_URI");
             });
 
             var app = builder.Build();

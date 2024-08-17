@@ -67,16 +67,10 @@ namespace TrustEze.Controllers
 
         }
 
-        [HttpGet("callback")]
-        public IActionResult Callback()
-        {
-            return Redirect("https://trusteze.auth.us-east-1.amazoncognito.com/login?client_id=3gn8kb63bta2jmkjhcnhtnb4q0&response_type=token&scope=email+openid+phone&redirect_uri=http%3A%2F%2Flocalhost%3A80%2Fauth");
-        }
-
         [HttpGet("login")]
         public IActionResult Login()
-        {
-            return Redirect("https://trusteze.auth.us-east-1.amazoncognito.com/login?client_id=3gn8kb63bta2jmkjhcnhtnb4q0&response_type=code&scope=email+openid+phone&redirect_uri=http%3A%2F%2Flocalhost%3A80%2Fauth");
+        {//https://trusteze.auth.us-east-1.amazoncognito.com/login?client_id=3gn8kb63bta2jmkjhcnhtnb4q0&response_type=code&scope=email+openid+phone&redirect_uri=http%3A%2F%2Flocalhost%3A80%2Fauth
+            return Redirect(_options.HostedUIUri);
         }
     }
 }
