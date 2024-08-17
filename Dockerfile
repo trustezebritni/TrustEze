@@ -3,7 +3,6 @@ WORKDIR /app
 COPY . .
 RUN dotnet restore ./TrustEze/TrustEze.csproj
 RUN dotnet publish -c Release -o out
-RUN dotnet dev-certs https --export-path ./dev-cert.pfx
 
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
 
@@ -14,7 +13,8 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0
 
 WORKDIR /app
 COPY --from=build-env /app/out ./
-
+COPY ./fullchain.pem /etc/letsencrypt/live/trusteze.co/fullchain.pem
+COPY ./privkey.pem /etc/letsencrypt/live/trusteze.co/privkey.pem
 EXPOSE 8080
 EXPOSE 80
 EXPOSE 443
