@@ -18,6 +18,7 @@ namespace TrustEze.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet(Name = "RedirectSwagger")]
+        //[Route("/")]
         public IActionResult Get()
         {
             return Redirect("http://api.trusteze.co/swagger/index.html");

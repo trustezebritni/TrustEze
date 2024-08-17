@@ -1,5 +1,6 @@
 using Microsoft.OpenApi.Models;
 using System.Reflection;
+using TrustEze.Models;
 
 
 namespace TrustEze
@@ -12,8 +13,6 @@ namespace TrustEze
         {
             var builder = WebApplication.CreateBuilder(args);
             //builder.WebHost.UseUrls("http://localhost:8080;https://localhost:443");
-
-            // Add services to the container.
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -44,6 +43,15 @@ namespace TrustEze
             });
 
             builder.Services.AddCors();
+            builder.Services.AddHttpClient();
+
+            builder.Services.Configure<AuthControllerOptions>(p =>
+            {
+                p.CognitoUri = builder.Configuration["COGNITO_URI"] ?? throw new ArgumentNullException("COGNITO_URI");
+                p.ClientSecret = builder.Configuration["CLIENT_SECRET"] ?? throw new ArgumentNullException("CLIENT_SECRET");
+                p.ClientId = builder.Configuration["CLIENT_ID"] ?? throw new ArgumentNullException("CLIENT_ID");
+                p.CallbackUri = builder.Configuration["CALLBACK_URI"] ?? throw new ArgumentNullException("CALLBACK_URI");
+            });
 
             var app = builder.Build();
             app.UseCors(x => x
@@ -64,7 +72,7 @@ namespace TrustEze
 
             app.UseHttpsRedirection();
 
-            app.UseAuthorization();
+            //app.UseAuthorization();
 
 
             app.MapControllers();
