@@ -16,7 +16,8 @@
 
 # Mono auto generated files
 mono_crash.*
-
+var-lib-letsencrypt/
+etc-letsencrypt/
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
